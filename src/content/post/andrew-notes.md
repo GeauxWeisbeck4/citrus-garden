@@ -1,42 +1,13 @@
 ---
-title: Flexible Theming System
-description: A flexible theming system based on HSL (Hue, Saturation, Lightness) using CSS variables, allowing for dynamic color adjustments and seamless theme management
-publishDate: 03 Feb 2025
-seriesId: citrus-docs
+title: Creator Platforms
+description: You may wonder why I would use creator platforms when it seems like I can create everything myself as a software developer, but they actually are a great way to grow your follower base as a creator - learn why here.
+publishDate: 01 May 2025
+seriesId: support-andrew
 orderInSeries: 3
-tags: ["theming", "CSS", "citrus"]
+tags: ["ko-fi", "buymeacoffee", "patreon", "github-sponsors", "open-collective"]
 ---
 
-This approach to defining colors can be described as a **flexible theming system based on HSL (Hue, Saturation, Lightness) with the use of CSS variables**.
-
-## Principles of colorization
-1. **Flexibility through HSL**
-   - Instead of fixed colors, the hue (`--hue`), saturation (`--saturation`), and brightness (`--bg-brightness`, `--fg-brightness`) are used. This allows for easy changes to the entire theme's color palette by adjusting just one parameter.
-
-2. **Unified Logic for Light and Dark Themes**
-   - Different brightness and saturation parameters are defined in `:root[data-theme="light"]` and `:root[data-theme="dark"]`, but the logic remains consistent.
-   - For example, in the light theme, the background is lighter (`--bg-brightness: 95%`), and in the dark theme, it is darker (`--bg-brightness: 17%`).
-
-3. **Creating Color Gradients**
-   - A gradient scale (`--theme-color-950` → `--theme-color-50`) is used to generate shades of a single color.
-   - This allows for dynamically generated variations of colors for backgrounds, text, and accents without manual input.
-
-4. **Defining Key UI Elements**
-   - `--theme-bg` — background color
-   - `--theme-accent-two`, `--theme-accent-base` — accent colors
-   - `--theme-text` — main text color
-   - `--theme-link` — link color
-   - `--theme-quote` — quote color
-
-```css title="globas.css"
-@layer base {
-	:root,
-	:root[data-theme="light"] {
-		color-scheme: light;
-
-		/*** MAIN COLORS (Base, Background, Accents, Text) ***/
-		/* Base theme hue color */
-		--hue: 200deg; /* Base hue color (Background, secondary accent, text) */
+g; /* Base hue color (Background, secondary accent, text) */
 		--saturation: 10%; /* Saturation of background and text, 0% - no tint */
 
 		/* Background */
